@@ -18,5 +18,5 @@ public interface ProductService extends Remote{
     String registerProduct(Product prodObj) throws RemoteException;
     String updateProduct(Product prodObj) throws RemoteException;
     String deleteProduct(Product prodObj) throws RemoteException;
-    List<Product> retrieveAllCustomer() throws RemoteException;
+    List<Product> retrieveAllProduct() throws RemoteException;
 }

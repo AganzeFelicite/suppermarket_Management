@@ -5,6 +5,7 @@
  */
 package dao;
 
+import java.util.List;
 import models.Product;
 
 import org.hibernate.Session;
@@ -35,4 +36,16 @@ public class ProductDao {
         }
     }
     
+    public List<Product> retrieveAllProduct(){
+        try{
+            // create session
+            Session ss = HibernateUtil.getSessionFactory().openSession();
+            List<Product> ProductList = ss.createQuery("select prodObj from Product prodObj").list();
+            
+            return ProductList;
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+        return null;
+    }
 }

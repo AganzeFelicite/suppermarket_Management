@@ -45,8 +45,17 @@ public class ProductImp extends UnicastRemoteObject  implements ProductService {
     }
 
     @Override
-    public List<Product> retrieveAllCustomer() throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public List<Product> retrieveAllProduct() throws RemoteException {
+        //To change body of generated methods, choose Tools | Templates.
+       
+         try{
+            List<Product> prodList = daoObj.retrieveAllProduct();
+            return prodList;
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+        return null;
+      
     }
     
 }

@@ -12,6 +12,7 @@ import javax.swing.table.DefaultTableModel;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
@@ -392,6 +393,25 @@ public class AdminDashBoard extends javax.swing.JFrame {
     }
     private void addTableRows(){
        
+          
+        try{
+            Registry registry = LocateRegistry.getRegistry("127.0.0.1", 6000);
+            ProductService service = (ProductService)registry.lookup("product");
+            List<Product> ProductList = service.retrieveAllProduct();
+          
+        
+        for(Product a : ProductList){
+            table1.addRow(new Object[]{
+                a.getProductId(),
+                a.getProductName(),
+                a.getPrice(),
+                a.getQuantity(),
+                a.getCategory()
+            });
+        }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
      
     
     }
