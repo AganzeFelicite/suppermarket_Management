@@ -48,4 +48,36 @@ public class ProductDao {
         }
         return null;
     }
+    public void deleteProduct(Product prodObj){
+        try{
+            // create session
+            Session ss = HibernateUtil.getSessionFactory().openSession();
+            // create transaction
+            Transaction tr = ss.beginTransaction();
+            // perform operation
+            ss.delete(prodObj);
+            // commit
+            tr.commit();
+            // close session
+            ss.close();
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+    }
+    public void updateProduct(Product prodObj){
+       try{
+            // create session
+            Session ss = HibernateUtil.getSessionFactory().openSession();
+            // create transaction
+            Transaction tr = ss.beginTransaction();
+            // perform operation
+            ss.update(prodObj);
+            // commit
+            tr.commit();
+            // close session
+            ss.close();
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+    }
 }

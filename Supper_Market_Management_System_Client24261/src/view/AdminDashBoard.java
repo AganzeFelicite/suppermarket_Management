@@ -507,6 +507,18 @@ public class AdminDashBoard extends javax.swing.JFrame {
 
     private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
         // TODO add your handling code here:
+        try {
+            
+            Registry registry = LocateRegistry.getRegistry("127.0.0.1", 6000);
+            ProductService service = (ProductService)registry.lookup("product");
+            String feedback = service.registerProduct(obj);
+            JOptionPane.showMessageDialog(this, feedback);
+           
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        
+        
         
         
         
