@@ -36,12 +36,28 @@ public class ProductImp extends UnicastRemoteObject  implements ProductService {
 
     @Override
     public String updateProduct(Product prodObj) throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //To change body of generated methods, choose Tools | Templates.
+        try{
+        daoObj.updateProduct(prodObj);
+        return "Updated in the DB";
+        }catch(Exception e){
+        e.printStackTrace();
+        }
+        return "Data not saved";
     }
 
     @Override
     public String deleteProduct(Product prodObj) throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //To change body of generated methods, choose Tools | Templates.
+        try{
+            daoObj.deleteProduct(prodObj);
+            return "Product cleared from Database";
+        
+        }
+        catch(Exception e){
+        e.printStackTrace();
+        }
+        return "Data no saved";
     }
 
     @Override

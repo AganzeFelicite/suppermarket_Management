@@ -17,7 +17,7 @@ import java.sql.*;
 public class CreateSeller extends javax.swing.JFrame {
 DefaultTableModel table2 = new DefaultTableModel();
     /**
-     * Creates new form AdminDashBoard
+     * Creates new form Categories
      */
     public CreateSeller() {
         initComponents();
@@ -444,7 +444,7 @@ DefaultTableModel table2 = new DefaultTableModel();
 
     private void adminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminActionPerformed
         // TODO add your handling code here:
-        AdminDashBoard form = new AdminDashBoard();
+        Categories form = new Categories();
         this.dispose();
         form.setVisible(true);
     }//GEN-LAST:event_adminActionPerformed
@@ -539,20 +539,20 @@ DefaultTableModel table2 = new DefaultTableModel();
 //                }
 //            }
 //        } catch (ClassNotFoundException ex) {
-//            java.util.logging.Logger.getLogger(AdminDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(Categories.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        } catch (InstantiationException ex) {
-//            java.util.logging.Logger.getLogger(AdminDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(Categories.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        } catch (IllegalAccessException ex) {
-//            java.util.logging.Logger.getLogger(AdminDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(Categories.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-//            java.util.logging.Logger.getLogger(AdminDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(Categories.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        }
 //        //</editor-fold>
 //
 //        /* Create and display the form */
 //        java.awt.EventQueue.invokeLater(new Runnable() {
 //            public void run() {
-//                new AdminDashBoard().setVisible(true);
+//                new Categories().setVisible(true);
 //            }
 //        });
 //    }

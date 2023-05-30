@@ -4,12 +4,17 @@
  */
 package models;
 
+import java.io.Serializable;
+import javax.persistence.*;
+
 /**
  *
  * @author Aganze Felicite
  */
-
-public class Category {
+@Entity
+public class Category implements Serializable{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int categoryId;
     private String categoryName;
 

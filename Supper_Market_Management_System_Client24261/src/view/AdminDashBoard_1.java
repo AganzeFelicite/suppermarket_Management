@@ -62,58 +62,56 @@ public class AdminDashBoard extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         price = new javax.swing.JTextField();
         update = new javax.swing.JButton();
-        read = new javax.swing.JButton();
         add = new javax.swing.JButton();
         delete = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tableData = new javax.swing.JTable();
         jLabel7 = new javax.swing.JLabel();
-        refreshing = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
-        createSeller.setBackground(new java.awt.Color(0, 204, 255));
+        createSeller.setBackground(new java.awt.Color(255, 255, 255));
         createSeller.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        createSeller.setForeground(new java.awt.Color(255, 255, 255));
+        createSeller.setForeground(new java.awt.Color(0, 204, 255));
         createSeller.setText("Create A seller");
-        createSeller.setBorder(null);
+        createSeller.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         createSeller.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 createSellerActionPerformed(evt);
             }
         });
 
-        AdminDashBoard.setBackground(new java.awt.Color(0, 204, 255));
+        AdminDashBoard.setBackground(new java.awt.Color(255, 255, 255));
         AdminDashBoard.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        AdminDashBoard.setForeground(new java.awt.Color(255, 255, 255));
+        AdminDashBoard.setForeground(new java.awt.Color(51, 204, 255));
         AdminDashBoard.setText("Admin DashBoard");
-        AdminDashBoard.setBorder(null);
+        AdminDashBoard.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         AdminDashBoard.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AdminDashBoardActionPerformed(evt);
             }
         });
 
-        logOut.setBackground(new java.awt.Color(0, 204, 255));
+        logOut.setBackground(new java.awt.Color(255, 255, 255));
         logOut.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
-        logOut.setForeground(new java.awt.Color(255, 255, 255));
+        logOut.setForeground(new java.awt.Color(0, 204, 204));
         logOut.setText("Log Out");
-        logOut.setBorder(null);
+        logOut.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         logOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logOutActionPerformed(evt);
             }
         });
 
-        Categories.setBackground(new java.awt.Color(0, 204, 255));
+        Categories.setBackground(new java.awt.Color(255, 255, 255));
         Categories.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        Categories.setForeground(new java.awt.Color(255, 255, 255));
+        Categories.setForeground(new java.awt.Color(0, 204, 255));
         Categories.setText("Categories");
-        Categories.setBorder(null);
+        Categories.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         Categories.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CategoriesActionPerformed(evt);
@@ -204,40 +202,33 @@ public class AdminDashBoard extends javax.swing.JFrame {
             }
         });
 
-        update.setBackground(new java.awt.Color(255, 153, 0));
+        update.setBackground(new java.awt.Color(255, 255, 255));
         update.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        update.setForeground(new java.awt.Color(255, 255, 255));
+        update.setForeground(new java.awt.Color(51, 204, 255));
         update.setText("Update");
+        update.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 updateActionPerformed(evt);
             }
         });
 
-        read.setBackground(new java.awt.Color(0, 51, 255));
-        read.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        read.setForeground(new java.awt.Color(255, 255, 255));
-        read.setText("Read");
-        read.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                readActionPerformed(evt);
-            }
-        });
-
-        add.setBackground(new java.awt.Color(51, 153, 0));
+        add.setBackground(new java.awt.Color(255, 255, 255));
         add.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        add.setForeground(new java.awt.Color(255, 255, 255));
+        add.setForeground(new java.awt.Color(51, 204, 255));
         add.setText("Add");
+        add.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         add.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addActionPerformed(evt);
             }
         });
 
-        delete.setBackground(new java.awt.Color(255, 0, 0));
+        delete.setBackground(new java.awt.Color(255, 255, 255));
         delete.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        delete.setForeground(new java.awt.Color(255, 255, 255));
+        delete.setForeground(new java.awt.Color(0, 204, 255));
         delete.setText("Delete");
+        delete.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 deleteActionPerformed(evt);
@@ -261,16 +252,6 @@ public class AdminDashBoard extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 2, 24)); // NOI18N
         jLabel7.setText("List of Products in the supermarket");
 
-        refreshing.setBackground(new java.awt.Color(0, 0, 0));
-        refreshing.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        refreshing.setForeground(new java.awt.Color(255, 255, 255));
-        refreshing.setText("Refresh");
-        refreshing.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                refreshingActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -282,49 +263,44 @@ public class AdminDashBoard extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 546, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(112, 112, 112))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(11, 11, 11)
-                                                .addComponent(add, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(52, 52, 52)
-                                                .addComponent(update, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addComponent(productName, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(category, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(category, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(add, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(31, 31, 31)
+                                                .addComponent(update, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createSequentialGroup()
-                                                .addGap(217, 217, 217)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addComponent(quantity, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addComponent(price, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                             .addGroup(layout.createSequentialGroup()
-                                                .addGap(18, 18, 18)
-                                                .addComponent(delete, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(60, 60, 60)
-                                                .addComponent(read, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(58, 58, 58)
-                                                .addComponent(refreshing, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(productId, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap(75, Short.MAX_VALUE))))
+                                                .addGap(38, 38, 38)
+                                                .addComponent(delete, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 0, Short.MAX_VALUE))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(productId, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 981, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addContainerGap(49, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 546, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(112, 112, 112))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(247, 247, 247)
-                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 528, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 981, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(191, 191, 191)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 528, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -363,16 +339,14 @@ public class AdminDashBoard extends javax.swing.JFrame {
                 .addComponent(category, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(update, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(add, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(read, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(delete, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(refreshing, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(add, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(delete, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(update, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(45, 45, 45)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -431,14 +405,8 @@ public class AdminDashBoard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_priceActionPerformed
 
-    private void readActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_readActionPerformed
-        // TODO add your handling code here:
-      
-        
-    }//GEN-LAST:event_readActionPerformed
-
     private void CategoriesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CategoriesActionPerformed
-  
+            
     }//GEN-LAST:event_CategoriesActionPerformed
 
     private void createSellerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createSellerActionPerformed
@@ -491,37 +459,47 @@ public class AdminDashBoard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_categoryItemStateChanged
 
-    private void refreshingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshingActionPerformed
-        // TODO add your handling code here:
-          table1.setRowCount(0);
-          addTableRows();
-          addCategories();
-        
-    }//GEN-LAST:event_refreshingActionPerformed
-
     private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
         // TODO add your handling code here:
+        Product obj = new Product();
+        obj.setProductId(Integer.parseInt(productId.getText()));
+         try {
+            
+            Registry registry = LocateRegistry.getRegistry("127.0.0.1", 6000);
+            ProductService service = (ProductService)registry.lookup("product");
+            String feedback = service.deleteProduct(obj);
+            JOptionPane.showMessageDialog(this, feedback);
+            table1.setRowCount(0);
+            addTableRows();
+           
+        }catch(Exception e){
+            e.printStackTrace();
+        }
      
         
     }//GEN-LAST:event_deleteActionPerformed
 
     private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
         // TODO add your handling code here:
+        Product obj = new Product();
+        obj.setProductId(Integer.parseInt(productId.getText()));
+        obj.setProductName(productName.getText()); 
+        obj.setPrice(Float.parseFloat(price.getText()));
+        obj.setQuantity(Float.parseFloat(quantity.getText()));
+        obj.setCategory((String)category.getSelectedItem());
         try {
             
             Registry registry = LocateRegistry.getRegistry("127.0.0.1", 6000);
             ProductService service = (ProductService)registry.lookup("product");
-            String feedback = service.registerProduct(obj);
+            String feedback = service.updateProduct(obj);
             JOptionPane.showMessageDialog(this, feedback);
+            table1.setRowCount(0);
+            addTableRows();
            
         }catch(Exception e){
             e.printStackTrace();
         }
-        
-        
-        
-        
-        
+     
         
     }//GEN-LAST:event_updateActionPerformed
 
@@ -550,6 +528,7 @@ public class AdminDashBoard extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(AdminDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
@@ -581,8 +560,6 @@ public class AdminDashBoard extends javax.swing.JFrame {
     private javax.swing.JTextField productId;
     private javax.swing.JTextField productName;
     private javax.swing.JTextField quantity;
-    private javax.swing.JButton read;
-    private javax.swing.JButton refreshing;
     private javax.swing.JTable tableData;
     private javax.swing.JButton update;
     // End of variables declaration//GEN-END:variables

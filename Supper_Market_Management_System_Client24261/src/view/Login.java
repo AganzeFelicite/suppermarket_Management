@@ -167,7 +167,7 @@ public class Login extends javax.swing.JFrame {
         result = Obj.loginTest(id,roles, password1);
         if ( roles.equals("Admin")){
             if(result.next()){
-                AdminDashBoard form = new AdminDashBoard();
+                Categories form = new Categories();
                 this.dispose();
                 form.setVisible(true);
                 name = result.getString(2);

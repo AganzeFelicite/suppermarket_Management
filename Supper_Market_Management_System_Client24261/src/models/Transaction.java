@@ -4,11 +4,13 @@
  */
 package models;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Aganze Felicite
  */
-public class Transaction {
+public class Transaction implements Serializable  {
     private int productId;
     private String productName;
     private Float quantity;

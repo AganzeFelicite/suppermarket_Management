@@ -3,12 +3,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package models;
+import java.io.Serializable;
+import javax.persistence.*;
 
 /**
  *
  * @author Aganze Felicite
  */
+@Entity
 public class Seller {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int uid;
     private String firstName;
     private String lastName;
